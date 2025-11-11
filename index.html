@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saree Store - Home</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    /* Home Page Container */
+    .home-container {
+      text-align: center;
+      background: #fff;
+      padding: 60px 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,.2);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .logo {
+      font-size: 48px;
+      color: #e91e63;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .tagline {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .home-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform .3s, box-shadow .3s;
+      min-width: 140px;
+    }
+
+    .home-btn.login {
+      background: #2196f3;
+      color: #fff;
+    }
+
+    .home-btn.register {
+      background: #4caf50;
+      color: #fff;
+    }
+
+    .home-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .btn-group {
+        flex-direction: column;
+      }
+      .home-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <h1 class="logo">E-Platform for Genuine Paithani Try & Buy</h1>
+    <p class="tagline">Commerce, Management and Law</p>
+    <div class="btn-group">
+      <button class="home-btn login" onclick="window.location.href='login.html'">Login</button>
+      <button class="home-btn register" onclick="window.location.href='register.html'">Register</button>
+    </div>
+  </div>
+</body>
+</html>
