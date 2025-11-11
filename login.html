@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Saree Store</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .form-container h2 {
+      margin-bottom: 25px;
+      color: #e91e63;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      border: 2px solid #eee;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .form-container input:focus {
+      border-color: #e91e63;
+      outline: none;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 14px;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    .form-container button:hover {
+      background: #c2185b;
+    }
+
+    .error {
+      color: #f44336;
+      margin: 15px 0;
+      min-height: 24px;
+      font-size: 14px;
+    }
+
+    .link {
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 30px 20px;
+      }
+      .form-container h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Login</h2>
+    <input type="text" id="loginId" placeholder="User ID" />
+    <input type="password" id="loginPass" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="loginError" class="error"></p>
+    <p><a href="index.html" class="link">Back to Home</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
